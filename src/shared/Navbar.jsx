@@ -10,13 +10,18 @@ const Navbar = () => {
 
     return (
         <nav
-            className="flex items-center justify-between w-full relative dark:bg-slate-900 bg-white rounded-full px-[10px] py-[8px]">
+            className="flex items-center justify-between w-full relative dark:bg-slate-900 rounded-full py-[8px]">
 
             {/* logo */}
-            <img src="https://i.ibb.co/0BZfPq6/darklogo.png" alt="logo" className="w-[55px] "/>
+           <div className="flex items-center gap-2 cursor-pointer">
+             <img src="/logo_icon.png" alt="logo" className="w-10 h-10"/>
+             <div>
+                <p className="text-4xl">DevShine</p>
+             </div>
+           </div>
 
             {/* nav links */}
-            <ul className="items-center gap-[20px] text-[1rem] text-[#424242] md:flex hidden">
+            <ul className="items-center gap-[20px] text-[1rem]  md:flex hidden">
 
                 <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">home</li>
 
