@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="py-6 sm:py-8 lg:py-20">
+    <section className="py-6 sm:py-8 lg:py-20 w-11/12 mx-auto">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full max-w-7xl mx-auto">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <p className="text-[#666666] text-lg tracking-wider sm:text-xl">
+          <p className="text-gray-400 text-lg tracking-wider sm:text-xl">
             Hello, I’m 👋
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider mt-5 sm:mt-6 lg:mt-8">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wider mt-5 sm:mt-6 lg:mt-8">
             <span className="text-[#c8f21d]">Alex Robert</span>
           </h1>
-          <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold mt-4 sm:mt-4 lg:mt-5 tracking-wider">
+          <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold mt-4 sm:mt-4 lg:mt-5 tracking-wider">
             A UI/UX DESIGNER <br /><span className="italic">& DEVELOPER</span>
           </h1>
           <p className="mt-5 text-gray-400 tracking-wider text-sm sm:text-lg text-justify lg:text-start max-w-lg mx-auto lg:mx-0">

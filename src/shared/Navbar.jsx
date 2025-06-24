@@ -37,19 +37,19 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Link
               to="/"
-              className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize "
+              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize "
             >
               Home
             </Link>
             <Link
               to="/features"
-              className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize"
+              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
             >
               Blogs
             </Link>
             <Link
               to="/blogs"
-              className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize"
+              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
             >
               Contacts
             </Link>

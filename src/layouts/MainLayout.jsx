@@ -11,12 +11,12 @@ const MainLayout = () => {
           </div>
 
             {/* Outlet for nested routes */}
-          <div className="w-11/12 mx-auto">
+          <div className="">
             <Outlet />
           </div>
 
             {/* Footer here */}
-          <div className="w-11/12 mx-auto">
+          <div className="">
             <Footer/>
           </div>
         </div>
