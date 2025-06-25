@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold mt-4 sm:mt-4 lg:mt-5 tracking-wider">
             A UI/UX DESIGNER <br /><span className="italic">& DEVELOPER</span>
           </h1>
-          <p className="mt-5 text-gray-400 tracking-wider text-sm sm:text-lg text-justify lg:text-start max-w-lg mx-auto lg:mx-0">
+          <p className="mt-5 text-gray-400 tracking-wider text-sm sm:text-lg lg:text-justify  max-w-lg mx-auto lg:mx-0">
             As a dedicated professional with a passion for design, I bring 10+ years of experience in UI/UX design & development throughout the best of my career.
           </p>
 
@@ -43,18 +43,18 @@ const Hero = () => {
             ))}
           </div>
 
-          <div className="mt-5 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <div className="mt-5 flex flex-col sm:flex-row justify-center items-center lg:justify-start gap-6 lg:gap-4">
             <a
               href="https://drive.google.com/file/d/17pitcf77uvbny3y3idpI2pZWUwqmVUJP/view?usp=sharing"
               target="_blank"
             >
-              <Button className="bg-[#c8f21d] text-black lg:text-xl lg:py-6 hover:bg-white flex items-center justify-center gap-2 w-full sm:w-auto">
+              <Button className="bg-[#c8f21d] text-black lg:text-lg lg:py-6 hover:bg-white flex items-center justify-center gap-2  sm:w-auto">
                 Download Resume <FaDownload className="text-2xl" />
               </Button>
             </a>
             <div>
               <Link to="/projects">
-                <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-xl lg:py-6 border-[#c8f21d] hover:text-black w-full sm:w-auto">
+                <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-lg lg:py-6 border-[#c8f21d] hover:text-black w-full sm:w-auto">
                   Browse Projects
                 </Button>
               </Link>

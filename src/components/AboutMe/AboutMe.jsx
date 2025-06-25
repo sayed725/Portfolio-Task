@@ -17,7 +17,7 @@ const AboutMe = () => {
   return (
     <div className="py-10 bg-black w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-10 flex flex-col-reverse">
           {/* Image div */}
           <div className="w-full  flex justify-center lg:justify-start">
             <img
@@ -33,7 +33,7 @@ const AboutMe = () => {
               About Me
             </p>
             {/* title  */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wider  mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider  mb-4">
               Best <span className="text-[#c8f21d]">UI/UX Designer & </span> 
               <p className="mt-3"><span className="italic text-[#c8f21d]">Developer</span> in Bangladesh</p>
             </h1>

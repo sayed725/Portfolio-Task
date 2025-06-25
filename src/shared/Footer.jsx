@@ -56,7 +56,7 @@ const ResponsiveFooter = () => {
 
               {/* input  */}
               <div class="flex gap-3 mt-10 lg:w-2/3">
-                <Input type="email" placeholder="Email" className="w-2/3 border-gray-400 focus:border-black" />
+                <Input type="email" placeholder="Email" className="w-2/3 border-[#c8f21d] focus:border-black text-[#c8f21d]" />
                 <Button type="submit" variant="outline" className="w-1/3 bg-[#c8f21d] text-black hover:bg-white">
                   Sign Up <FaAngleRight/>
                 </Button>

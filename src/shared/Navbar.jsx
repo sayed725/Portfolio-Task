@@ -44,16 +44,22 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/features"
-              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
+              to="/services"
+              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize "
             >
-              Blogs
+              Services
             </Link>
             <Link
-              to="/blogs"
+              to="/blog"
               className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
             >
-              Contacts
+              Blog
+            </Link>
+            <Link
+              to="/"
+              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            >
+              Contact
             </Link>
           </div>
         </div>
