@@ -9,56 +9,56 @@ const Blog = () => {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 26, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
-        "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
+        "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 24, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
     {
       title:
-        "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
+        "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 23, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: "June 21, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
     {
       title:
-        "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
+        "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 18, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 15, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
     {
       title:
-        "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
+        "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 12, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: "September 25, 2023",
+      date: " June 10, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
   ];
@@ -68,11 +68,11 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto">
         <PageHeader title="Blog" />
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* blog cards  */}
 
           <div className="col-span-2">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {blogData.map((blog, index) => (
                 <BlogCard
                   key={index}

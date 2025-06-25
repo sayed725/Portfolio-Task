@@ -55,12 +55,6 @@ const Navbar = () => {
             >
               Blog
             </Link>
-            <Link
-              to="/"
-              className="before:w-0 hover:before:w-full before:bg-[#c8f21d] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] dark:text-[#abc2d3] hover:text-[#c8f21d] transition-all duration-300 before:left-0 cursor-pointer capitalize"
-            >
-              Contact
-            </Link>
           </div>
         </div>
         <div className="hidden md:flex items-center">
@@ -116,18 +110,18 @@ const Navbar = () => {
                   home
                 </Link>
                 <Link
-                  to="/features"
+                  to="/services"
                   className="text-lg hover:text-blue-200 transition capitalize"
                   onClick={() => setIsOpen(false)}
                 >
-                  Blogs
+                  Services
                 </Link>
                 <Link
-                  to="/blogs"
+                  to="/blog"
                   className="text-lg hover:text-blue-200 transition capitalize"
                   onClick={() => setIsOpen(false)}
                 >
-                  Contacts
+                  Blog
                 </Link>
                 <Button
                   className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-[#c8f21d]/90 capitalize text-black w-full"
