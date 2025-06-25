@@ -1,10 +1,12 @@
 import { FaDownload, FaInstagram, FaWhatsapp, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
+import { Element } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section className="py-6 sm:py-8 lg:py-20 w-11/12 mx-auto">
+   <Element name="hero">
+     <section className="py-6 sm:py-8 lg:py-20 w-11/12 mx-auto">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full max-w-7xl mx-auto">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -46,13 +48,13 @@ const Hero = () => {
               href="https://drive.google.com/file/d/17pitcf77uvbny3y3idpI2pZWUwqmVUJP/view?usp=sharing"
               target="_blank"
             >
-              <Button className="bg-[#c8f21d] text-black lg:text-xl lg:py-6 hover:bg-[#c8f21d]/90 flex items-center justify-center gap-2 w-full sm:w-auto">
+              <Button className="bg-[#c8f21d] text-black lg:text-xl lg:py-6 hover:bg-white flex items-center justify-center gap-2 w-full sm:w-auto">
                 Download Resume <FaDownload className="text-2xl" />
               </Button>
             </a>
             <div>
               <Link to="/projects">
-                <Button variant="outline" className="rounded-md font-semibold text-black lg:text-xl lg:py-6 border-[#c8f21d] hover:text-black w-full sm:w-auto">
+                <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-xl lg:py-6 border-[#c8f21d] hover:text-black w-full sm:w-auto">
                   Browse Projects
                 </Button>
               </Link>
@@ -76,6 +78,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+   </Element>
   );
 };
 

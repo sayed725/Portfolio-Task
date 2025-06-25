@@ -1,9 +1,10 @@
-import { Link } from "react-router";
+
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa";
+import { Link } from 'react-scroll';
 
 const ResponsiveFooter = () => {
   return (
@@ -85,10 +86,11 @@ const ResponsiveFooter = () => {
         </div>
       </div>
       
-      <div className="flex justify-center items-center relative bottom-5">
+      <Link to="navbar" smooth={true} duration={700}
+       className="flex justify-center items-center relative bottom-5">
 
       <Button className="py-5 px-5 bg-[#c8f21d] hover:bg-white text-black"><FaChevronUp/></Button>
-      </div>
+      </Link>
 
       {/* copy right  */}
     <div className="w-11/12 mx-auto">

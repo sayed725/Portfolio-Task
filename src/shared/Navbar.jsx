@@ -10,6 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { IoIosSearch } from "react-icons/io";
+import { Element } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="text-white shadow-lg sticky top-0 z-10 py-5">
+   <Element name="navbar">
+     <nav className="text-white z-10 py-5">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <Link to={"/"} className="flex items-center gap-2 cursor-pointer">
@@ -56,7 +58,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden md:flex items-center">
-          <Button className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-[#c8f21d]/90 capitalize text-black transition-all duration-300">
+          <Button className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300">
             Hire Me
           </Button>
         </div>
@@ -133,6 +135,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </Element>
   );
 };
 
