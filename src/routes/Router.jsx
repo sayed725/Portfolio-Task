@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import MainLayout from "../layouts/MainLayout";
 import Blog from "../pages/Blog/Blog";
 import Services from "../pages/Services/Services";
+import Error from "../pages/Error/Error";
 
 const Router = () => {
   return (
