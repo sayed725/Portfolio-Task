@@ -1,53 +1,93 @@
-import React from 'react';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import React from "react";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FiCheck } from "react-icons/fi";
+import { FaCheckDouble } from "react-icons/fa6";
+import { RiCheckDoubleFill } from "react-icons/ri";
+
 
 
 const AboutMe = () => {
-  const services = ["Branding & Design", "Web Development", "Digital Marketing", "Product Design"];
-  const contact = { email: "support@gmail.com", phone: "+880 (123) 456 88" };
+  const services = [
+    "UI/UX DESIGN",
+    "WEB DEVELOPMENT",
+    "PRODUCT DESIGN",
+    "BRANDING & DESIGN",
+  ];
 
   return (
-    <div className="py-5 w-11/12 mx-auto bg-black">
-      <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between w-full max-w-7xl mx-auto'>
-
-
-          {/* image div  */}
-     <div className='w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center lg:justify-start relative'>
-         <img src="/about.jpg" alt="Profile" className=" h-96 rounded-lg" />
-     </div>
-
-
-
-
-
-        {/* text side  */}
-       <div className='w-full flex flex-col lg:justify-end'>
-        <p className='text-gray-400 text-lg tracking-wider sm:text-xl mb-5'>About Me</p>
-         <h1 className="text-4xl font-bold text-yellow-400 mb-4">Professional Problem Solutions For Digital Products</h1>
-      <p className="mb-6 text-gray-300">Best UI/UX Designer & Developer in Bangladesh</p>
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        {services.map((service, index) => (
-          <div key={index} className="flex items-center">
-            <svg className="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 102 0V7zm-1 6a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
-            </svg>
-            <span>{service}</span>
+    <div className="py-10 bg-black w-11/12 mx-auto">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Image div */}
+          <div className="w-full  flex justify-center lg:justify-start">
+            <img
+              src="/about.jpg"
+              alt="Profile"
+              className="w-full max-w-md h-auto rounded-lg object-cover"
+            />
           </div>
-        ))}
-      </div>
-      <div className="flex space-x-4">
-        <a href={`mailto:${contact.email}`} className="flex items-center bg-gray-800 p-2 rounded-lg">
-          <FaEnvelope className="text-yellow-400 mr-2" />
-          <span>{contact.email}</span>
-        </a>
-        <a href={`tel:${contact.phone}`} className="flex items-center bg-gray-800 p-2 rounded-lg">
-          <FaPhone className="text-yellow-400 mr-2" />
-          <span>{contact.phone}</span>
-        </a>
-      </div>
-       </div>
 
-    
+          {/* Text side */}
+          <div className="w-full flex flex-col items-center gap-4 lg:items-start text-center lg:text-left">
+            <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4">
+              About Me
+            </p>
+            {/* title  */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wider  mb-4">
+              Best <span className="text-[#c8f21d]">UI/UX Designer & </span> 
+              <p className="mt-3"><span className="italic text-[#c8f21d]">Developer</span> in Bangladesh</p>
+            </h1>
+
+            {/* description  */}
+            <p className="mb-6 text-gray-400 text-sm sm:text-lg tracking-wider">
+              At DevShine, we understand that success is just about delivering a
+              product- its about building relationships and making meaningful
+              impact of client{" "}
+            </p>
+
+            {/* services  */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 w-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-2 justify-center lg:justify-start"
+                >
+                  <RiCheckDoubleFill  className="text-[#c8f21d] text-2xl" />
+                  <span className="text-gray-400 text-xl">{service}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* contact card  */}
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full justify-center items-center lg:justify-start">
+              <div className="flex flex-col lg:flex-row  items-center justify-between bg-[#1f1f1f] py-5 px-10 rounded-lg hover:bg-gray-700 transition-colors  gap-10">
+                {/* email */}
+                <p className="flex items-center text-start gap-2">
+                  <p className="rounded-full bg-[#c8f21d]">
+                    <FaEnvelope className="text-black text-5xl p-2 " />
+                  </p>
+                  <p>
+                    <span className="text-gray-400 text-sm">Email Us</span>
+                    <br />
+                    <span className="text-xl">support@gmail.com</span>
+                  </p>
+                </p>
+
+                {/* call  */}
+                <p className="flex items-center gap-2 text-start">
+                  <p className="rounded-full bg-[#c8f21d]">
+                    <FaPhone className="text-black text-5xl p-2 " />
+                  </p>
+                  <p>
+                    <span className="text-gray-400 text-sm">Make a Call</span>
+                    <br />
+                    <span className="text-xl">+8801627142598</span>
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
