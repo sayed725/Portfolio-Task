@@ -9,7 +9,7 @@ const Hero = () => {
      <section className="py-6 sm:py-8 lg:py-20 w-11/12 mx-auto">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full max-w-7xl mx-auto">
         {/* Left Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <div className="w-full lg:w-1/2 text-left">
           <p className="text-gray-400 text-lg tracking-wider sm:text-xl">
             Hello, I’m 👋
           </p>
@@ -23,7 +23,7 @@ const Hero = () => {
             As a dedicated professional with a passion for design, I bring 10+ years of experience in UI/UX design & development throughout the best of my career.
           </p>
 
-          <div className="flex gap-4 sm:gap-8 py-5 justify-center lg:justify-start">
+          <div className="flex gap-4 sm:gap-8 py-5 justify-start">
             {[
               { href: "https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", Icon: FaLinkedin },
               { href: "https://github.com/sayed725", Icon: FaGithub },
@@ -43,18 +43,18 @@ const Hero = () => {
             ))}
           </div>
 
-          <div className="mt-5 flex flex-col sm:flex-row justify-center items-center lg:justify-start gap-6 lg:gap-4">
+          <div className="mt-5 flex flex-col sm:flex-row items-center justify-start gap-6 lg:gap-4">
             <a
               href="https://drive.google.com/file/d/17pitcf77uvbny3y3idpI2pZWUwqmVUJP/view?usp=sharing"
               target="_blank"
             >
-              <Button className="bg-[#c8f21d] text-black lg:text-lg lg:py-6 hover:bg-white flex items-center justify-center gap-2  sm:w-auto">
+              <Button className="bg-[#c8f21d] text-black lg:text-lg lg:py-6 hover:bg-white flex items-center justify-center  gap-2  ">
                 Download Resume <FaDownload className="text-2xl" />
               </Button>
             </a>
             <div>
               <Link to="/projects">
-                <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-lg lg:py-6 border-[#c8f21d] hover:text-black w-full sm:w-auto">
+                <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-lg lg:py-6 border-[#c8f21d] hover:text-black w-full flex justify">
                   Browse Projects
                 </Button>
               </Link>

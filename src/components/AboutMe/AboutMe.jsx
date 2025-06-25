@@ -27,14 +27,14 @@ const AboutMe = () => {
           </div>
 
           {/* Text side */}
-          <div className="w-full flex flex-col items-center gap-4 lg:items-start text-center lg:text-left">
+          <div className="w-full flex flex-col  gap-4 justify-start items-start text-left">
             <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4">
               About Me
             </p>
             {/* title  */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider  mb-4">
               Best <span className="text-[#c8f21d]">UI/UX Designer & </span> 
-              <p className="mt-3"><span className="italic text-[#c8f21d]">Developer</span> in Bangladesh</p>
+             <span className="italic text-[#c8f21d]">Developer</span> in Bangladesh
             </h1>
 
             {/* description  */}
@@ -49,7 +49,7 @@ const AboutMe = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-2 justify-center lg:justify-start"
+                  className="flex items-center gap-2 justify-start"
                 >
                   <RiCheckDoubleFill  className="text-[#c8f21d] text-2xl" />
                   <span className="text-gray-400 text-xl">{service}</span>
