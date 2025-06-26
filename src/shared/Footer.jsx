@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import { NavLink } from "react-router";
 
 const ResponsiveFooter = () => {
   return (
@@ -37,27 +38,34 @@ const ResponsiveFooter = () => {
               <div className="">
                 <ul class="flex text-gray-400 flex-wrap gap-4">
                   <li>
-                    <a href="#" class="hover:text-yellow-400">
+                    < NavLink to={'/'} className="hover:text-[#c8f21d]">
                       Home
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#" class="hover:text-yellow-400">
+                    <NavLink to={'/services'} className="hover:text-[#c8f21d]">
+                      Services
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={'/blog'} className="hover:text-[#c8f21d]">
                       Blogs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-yellow-400">
-                      Contacts
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
 
               {/* input  */}
-              <div class="flex gap-3 mt-10 lg:w-2/3">
-                <Input type="email" placeholder="Email" className="w-2/3 border-[#c8f21d] focus:border-black text-[#c8f21d]" />
-                <Button type="submit" variant="outline" className="w-1/3 bg-[#c8f21d] text-black hover:bg-white">
+              <div class="flex gap-3 mt-10 lg:w-2/3 items-center">
+                <input
+              type="email"
+              name="email"
+              required
+              onChange={() => {}}
+              className=" p-2 w-full bg-[#1f1f1f] text-[#c8f21d] rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#c8f21d]"
+              placeholder="Your Email"
+            />
+                <Button  variant="outline" className="w-1/3 bg-[#c8f21d] text-black hover:bg-white">
                   Sign Up <FaAngleRight/>
                 </Button>
               </div>

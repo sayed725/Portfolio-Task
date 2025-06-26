@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageHeader from "../../shared/PageHeader";
 import Sidebar from "./SideBar";
 import BlogCard from "./BlogCard";
@@ -63,10 +63,15 @@ const Blog = () => {
     },
   ];
 
+  // Scroll to top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
-        <PageHeader title="Blog" />
+        <PageHeader title="Popular Blog" />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* blog cards  */}
