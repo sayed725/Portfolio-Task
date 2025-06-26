@@ -20,7 +20,7 @@ const NewPosts = () => {
             {" "}
             <SlCalender className="text-white" /> June 22, 2025
           </p>
-          <Link className="hover:text-[#c8f21d]">Online Environment Work</Link>
+          <Link to={'#'} className="hover:text-[#c8f21d]">Online Environment Work</Link>
         </div>
       </div>
       <div className="flex gap-5 items-center mb-5">
@@ -36,7 +36,7 @@ const NewPosts = () => {
             {" "}
             <SlCalender className="text-white" /> June 23, 2025
           </p>
-          <Link className="hover:text-[#c8f21d]">
+          <Link to={'#'} className="hover:text-[#c8f21d]">
             Usability With Participants
           </Link>
         </div>
@@ -55,7 +55,7 @@ const NewPosts = () => {
             <SlCalender className="text-white" />
             June 25, 2025
           </p>
-          <Link className="hover:text-[#c8f21d]">
+          <Link to={'#'} className="hover:text-[#c8f21d]">
             Tips For Conducting Study
           </Link>
         </div>

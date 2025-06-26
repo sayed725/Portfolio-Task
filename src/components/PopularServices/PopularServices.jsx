@@ -1,6 +1,8 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
+
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"; 
 
 const PopularServices = () => {
   const services = [
@@ -32,30 +34,58 @@ const PopularServices = () => {
     },
   ];
 
+  // Animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const stagger = {
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <div className="py-10 lg:py-20 w-11/12 mx-auto bg-black rounded-md">
       <div className="max-w-7xl mx-auto">
-        <p className="text-gray-400 text-base sm:text-lg lg:text-center tracking-wider mb-4">
+        <motion.p
+          className="text-gray-400 text-base sm:text-lg lg:text-center tracking-wider mb-4"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+        >
           Popular Services
-
-        </p>
-        {/* title  */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider lg:text-center  mb-4">
+        </motion.p>
+        {/* title */}
+        <motion.h1
+          className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider lg:text-center mb-4"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+        >
           My <span className="text-[#c8f21d]">Special Service </span>
           For Your <br className="hidden lg:block" /> Business Development
-        </h1>
+        </motion.h1>
 
         {/* cards */}
-
-        <div className="bg-black py-10">
+        <motion.div
+          className="bg-black py-10"
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {services.map((service) => (
-              <div
+              <motion.div
                 key={service.id}
-                className="bg-[#1f1f1f] rounded-lg p-5 lg:p-10 transition-colors border-2 border-gray-700  hover:border-2 hover:border-[#c8f21d]"
+                className="bg-[#1f1f1f] rounded-lg p-5 lg:p-10 transition-colors border-2 border-gray-700 hover:border-2 hover:border-[#c8f21d]"
+                variants={fadeInUp}
               >
                 <div className="flex items-center justify-between">
-                  <div className="flex  gap-6">
+                  <div className="flex gap-6">
                     <span className="text-2xl font-semibold text-white">
                       {service.id}
                     </span>
@@ -66,14 +96,14 @@ const PopularServices = () => {
                       <p className="text-gray-400 text-sm">{service.desc}</p>
                     </div>
                   </div>
-                  <p className="text-white rounded-full bg-black hover:bg-[#c8f21d] transition-colors hover:text-black p-2">
+                  <Link to="#" className="text-white rounded-full bg-black hover:bg-[#c8f21d] transition-colors hover:text-black p-2">
                     <MdArrowOutward size={30} />
-                  </p>
+                  </Link>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

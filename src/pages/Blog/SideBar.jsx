@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import NewPosts from "./NewPosts";
 import BlogCategory from "./BlogCategory";
 import BlogTags from "./BlogTags";
+import { Link } from "react-router";
 
 const Sidebar = () => (
   <div className="w-full bg-[#1f1f1f] py-5 px-5 text-white rounded-lg flex flex-col gap-5 border border-gray-700">
@@ -39,9 +40,10 @@ const Sidebar = () => (
         <h2 className="text-white text-3xl font-bold mt-2">
           Looking For Creative Web Designer
         </h2>
+       <Link to={'#'}>
         <Button className="mt-4  bg-[#c8f21d] text-black font-semibold rounded-lg hover:bg-white transition">
           Hire Me &gt;
-        </Button>
+        </Button></Link>
       </div>
     </div>
   </div>

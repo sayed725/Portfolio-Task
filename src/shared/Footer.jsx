@@ -105,10 +105,10 @@ const ResponsiveFooter = () => {
          <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto text-gray-400">
             <p>Copyright @2025, <span className="text-[#c8f21d]">DevShine</span> All Rights Reserved</p>
             <div class="flex space-x-5">
-              <a href="#" class="hover:text-[#c8f21d]">Facebook</a>
-              <a href="#" class="hover:text-[#c8f21d]">Twitter</a>
-              <a href="#" class="hover:text-[#c8f21d]">Instagram</a>
-              <a href="#" class="hover:text-[#c8f21d]">LinkedinIn</a>
+              <a href="https://www.facebook.com/abu.ssayed.khan.2024"  target="_blank" class="hover:text-[#c8f21d]">Facebook</a>
+              <a href="https://github.com/sayed725" target="_blank" class="hover:text-[#c8f21d]">Github</a>
+              <a href="https://www.facebook.com/abu.ssayed.khan.2024" target="_blank" class="hover:text-[#c8f21d]">Instagram</a>
+              <a href="https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:text-[#c8f21d]">LinkedinIn</a>
             </div>
           </div>
     </div>

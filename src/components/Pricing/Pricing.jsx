@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Pricing = () => {
   const plans = [
@@ -93,12 +94,13 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+               <Link to={'#'}> 
                 <Button
                   variant="secondary"
                   className="mt-10 w-2/3 bg-[#363636] lg:text-lg lg:py-6 text-white hover:bg-[#c8f21d] hover:text-black"
                 >
                   Choose Package &gt;
-                </Button>
+                </Button></Link>
               </div>
               </div>
             ))}

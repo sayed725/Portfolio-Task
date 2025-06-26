@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 
 const BlogTags = () => {
@@ -17,12 +18,12 @@ const BlogTags = () => {
           "Digital",
           "Mobile Apps",
         ].map((tag) => (
+         <Link key={tag} to={'#'} >
           <Button
-            key={tag}
             className="text-gray-400 px-3 py-1 rounded-md text-sm cursor-pointer hover:bg-[#c8f21d] hover:text-black transition-colors"
           >
             {tag}
-          </Button>
+          </Button></Link>
         ))}
       </div>
     </div>

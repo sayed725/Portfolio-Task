@@ -16,7 +16,7 @@ const BlogCard = ({ title, category, date, imageUrl }) => (
     {/* content  */}
     <div className="mt-10 flex flex-col gap-5">
         <p className="text-sm text-gray-400">{category}</p>
-      <Link className="hover:text-[#c8f21d] text-lg ">{title}</Link>
+      <Link to={'#'} className="hover:text-[#c8f21d] text-lg ">{title}</Link>
       <p className="text-sm text-gray-500">{date}</p>
     </div>
   </div>

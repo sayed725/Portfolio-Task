@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import PageHeader from "../../shared/PageHeader";
 import Sidebar from "./SideBar";
 import BlogCard from "./BlogCard";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"; 
 
 const Blog = () => {
   const blogData = [
@@ -9,21 +11,19 @@ const Blog = () => {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: " June 26, 2025",
+      date: "June 26, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
-      title:
-        "Tips For Conducting to Usability Studies With Participants",
+      title: "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: " June 24, 2025",
+      date: "June 24, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
     {
-      title:
-        "Tips For Conducting to Usability Studies With Participants",
+      title: "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: " June 23, 2025",
+      date: "June 23, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
@@ -34,31 +34,29 @@ const Blog = () => {
       imageUrl: "/Web-Developer.jpg",
     },
     {
-      title:
-        "Tips For Conducting to Usability Studies With Participants",
+      title: "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: " June 18, 2025",
+      date: "June 18, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: " June 15, 2025",
+      date: "June 15, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
     {
-      title:
-        "Tips For Conducting to Usability Studies With Participants",
+      title: "Tips For Conducting to Usability Studies With Participants",
       category: "Design, Figma",
-      date: " June 12, 2025",
+      date: "June 12, 2025",
       imageUrl: "/Web-Design.jpg",
     },
     {
       title:
         "Online Environment Work For Older Users systems ways Tips Usability Studies Pants",
       category: "Design, Figma",
-      date: " June 10, 2025",
+      date: "June 10, 2025",
       imageUrl: "/Web-Developer.jpg",
     },
   ];
@@ -68,33 +66,61 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const stagger = {
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <div className="min-h-screen w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
-        <PageHeader title="Popular Blog" />
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+        >
+          <PageHeader title="Popular Blog" />
+        </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* blog cards  */}
-
-          <div className="col-span-2">
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6"
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+        >
+          {/* blog cards */}
+          <motion.div className="col-span-2" variants={stagger}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {blogData.map((blog, index) => (
-                <BlogCard
+                <motion.div
                   key={index}
-                  title={blog.title}
-                  date={blog.date}
-                  imageUrl={blog.imageUrl}
-                  category={blog.category}
-                />
+                  variants={fadeInUp}
+                >
+                  <BlogCard
+                    title={blog.title}
+                    date={blog.date}
+                    imageUrl={blog.imageUrl}
+                    category={blog.category}
+                  />
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          {/* sidebar  */}
-         <div className="">
-             <Sidebar />
-         </div>
-        </div>
+          {/* sidebar */}
+          <motion.div variants={fadeInUp}>
+            <Sidebar />
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

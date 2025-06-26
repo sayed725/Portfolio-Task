@@ -65,7 +65,7 @@ const Reviews = () => {
             Clients Testimonials
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider text-white mb-6">
-            Hear from Our <span className="text-[#c8f21d]">1253+</span> Satisfied{" "}
+            Hear From My <span className="text-[#c8f21d]">1253+</span> Satisfied{" "}
             <span className="text-[#c8f21d]">Clients</span>
           </h1>
         </div>

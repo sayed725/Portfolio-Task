@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaCheck, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { Element } from "react-scroll";
 
 
 const Contact = () => {
@@ -30,7 +31,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-10 w-11/12 mx-auto">
+   <Element name="contact">
+     <div className="py-10 w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
           {/* Text side */}
@@ -148,6 +150,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+   </Element>
   );
 };
 

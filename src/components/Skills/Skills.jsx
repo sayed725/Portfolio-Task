@@ -9,11 +9,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Link } from "react-router";
 
 const Skills = () => {
   const skills = [
     { name: "Figma", percentage: "95%", icon: "/figma-1.png" },
-    { name: "Framer", percentage: "83%", icon: "/public/framer-1.png" },
+    { name: "Framer", percentage: "83%", icon: "/framer-1.png" },
     { name: "Photoshop", percentage: "93%", icon: "/photoshop-1.png" },
     { name: "WordPress", percentage: "84%", icon: "/Vector.png" },
     { name: "Angular", percentage: "65%", icon: "/angular-icon-1.png" },
@@ -45,9 +46,11 @@ const Skills = () => {
             </p>
 
             {/* contact card */}
+           <Link to={'#'}>
             <Button className="bg-[#c8f21d] text-black text-sm sm:text-base lg:text-lg py-2  lg:py-5 hover:bg-white flex items-center lg:justify-center gap-1 sm:gap-3  ">
               Learn More <FaChevronRight />
             </Button>
+           </Link>
           </div>
 
           {/* Image div */}

@@ -9,7 +9,7 @@ const BlogCategory = () => {
     <ul className="space-y-5">
       {["Web Design", "Mobile Apps Design", "Brand Identity Design", "Motion Graphic Design", "Web Development", "Digital Marketing"].map((item) => (
         <li key={item} className="">
-          <Link className='flex gap-2 items-center text-gray-400 hover:text-[#c8f21d]'><FaAngleRight/> {item}</Link>
+          <Link to={'#'} className='flex gap-2 items-center text-gray-400 hover:text-[#c8f21d]'><FaAngleRight/> {item}</Link>
         </li>
       ))}
     </ul>
