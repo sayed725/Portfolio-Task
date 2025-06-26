@@ -1,12 +1,40 @@
-# React + Vite
+# Portfolio Website - Internship Task  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern portfolio website built with **React + Vite**,
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Deployed Link](https://dev-shine.vercel.app/)   
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features  
+✅ **Multi-page Routing** - React Router for seamless navigation  
+✅ **Responsive Design** - Tailwind CSS for mobile-first styling  
+✅ **Custom Pages** - Includes Home, Services, Blog pages  
+✅ **Interactive Elements** - Hover effects, dynamic navbar  
 
-## Expanding the ESLint configuration
+## Tech Stack  
+- ⚛️ **Frontend:** React + Vite  
+- 🎨 **Styling:** Tailwind CSS  
+- 🔄 **Routing:** React Router DOM  
+- 🚀 **Deployment:** Vercel  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pages  
+1. **Home** - Hero section, skills, projects preview  
+2. **Services** - Bio, skill, Pricing  
+3. **Blog** - Placeholder articles with dummy content  
+
+## Installation  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/sayed725/Portfolio-Task.git
+
+
+## Installation  
+1. Clone the repository:  
+   ```bash
+  npm install
+
+
+## Installation  
+1. Clone the repository:  
+   ```bash
+   npm run dev
+
