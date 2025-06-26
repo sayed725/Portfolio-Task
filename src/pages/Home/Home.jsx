@@ -2,6 +2,8 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 import Hero from "../../components/HeroSection/Hero";
 import PopularServices from "../../components/PopularServices/PopularServices";
 import Pricing from "../../components/Pricing/Pricing";
+import Projects from "../../components/Projects/Projects";
+import Skills from "../../components/Skills/Skills";
 
 
 const Home = () => {
@@ -19,6 +21,15 @@ const Home = () => {
             <div>
                 <PopularServices />
             </div>
+
+             <div>
+                <Skills />
+            </div>
+
+            <div>
+                <Projects />
+            </div>
+           
 
             <div>
                 <Pricing />
