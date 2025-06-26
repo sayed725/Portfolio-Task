@@ -43,7 +43,7 @@ const Contact = () => {
             {/* title  */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider  mb-4">
               Let’s Talk About your
-              <span className="text-[#c8f21d]">Next Projects </span>
+              <span className="text-[#c8f21d]"> Next Projects </span>
             </h1>
 
             {/* description  */}

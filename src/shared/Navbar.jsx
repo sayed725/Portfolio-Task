@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import {
   Sheet,
   SheetContent,
@@ -15,6 +15,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+
+  // console.log(location.pathname);
 
   // eslint-disable-next-line no-unused-vars
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -36,7 +40,11 @@ const Navbar = () => {
       <nav className="text-white z-10 py-5">
         <div className="flex justify-between items-center">
           {/* Logo with animation */}
-          <motion.div variants={itemVariants} initial="hidden" animate="visible">
+          <motion.div
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <NavLink to="/" className="flex items-center gap-2 cursor-pointer">
               <img
                 src="/logo_icon.png"
@@ -96,11 +104,22 @@ const Navbar = () => {
             </div>
           </motion.div>
           <motion.div variants={itemVariants} animate="visible">
-           <Link to="contact" smooth={true} duration={700}>
-            <Button  className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300 hidden lg:block">
-              Contact Me
-            </Button>
-           </Link>
+            {location.pathname === "/" ? (
+              <Link to="contact" smooth={true} duration={700}>
+                <Button className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300 hidden lg:block">
+                  Contact Me
+                </Button>
+              </Link>
+            ) : (
+              <a
+                href="https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
+                <Button className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300 hidden lg:block">
+                  Contact Me
+                </Button>
+              </a>
+            )}
           </motion.div>
 
           {/* Mobile Hamburger Menu with animation */}
@@ -127,7 +146,11 @@ const Navbar = () => {
                     exit="exit"
                   >
                     <SheetHeader>
-                      <motion.div variants={itemVariants} initial="hidden" animate="visible">
+                      <motion.div
+                        variants={itemVariants}
+                        initial="hidden"
+                        animate="visible"
+                      >
                         <NavLink
                           to="/"
                           className="flex items-center gap-2 cursor-pointer"
@@ -138,7 +161,9 @@ const Navbar = () => {
                             className="w-8 h-8 sm:w-10 sm:h-10"
                           />
                           <div>
-                            <p className="text-2xl sm:text-3xl lg:text-4xl">DevShine</p>
+                            <p className="text-2xl sm:text-3xl lg:text-4xl">
+                              DevShine
+                            </p>
                           </div>
                         </NavLink>
                       </motion.div>
@@ -195,13 +220,33 @@ const Navbar = () => {
                           Blog
                         </NavLink>
                       </motion.div>
-                      <motion.div variants={itemVariants} initial="hidden" animate="visible">
-                        <Button
-                          className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-[#c8f21d]/90 capitalize text-black w-full"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          Hire Me
-                        </Button>
+                      <motion.div
+                        variants={itemVariants}
+                        initial="hidden"
+                        animate="visible"
+                      >
+                        {location.pathname === "/" ? (
+                          <Link to="contact" smooth={true} duration={700}>
+                            <Button
+                              onClick={() => setIsOpen(false)}
+                              className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300 "
+                            >
+                              Contact Me
+                            </Button>
+                          </Link>
+                        ) : (
+                          <a
+                            href="https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"
+                          >
+                            <Button
+                              onClick={() => setIsOpen(false)}
+                              className="py-1.5 px-3 text-sm sm:text-base bg-[#c8f21d] hover:bg-white capitalize text-black transition-all duration-300"
+                            >
+                              Contact Me
+                            </Button>
+                          </a>
+                        )}
                       </motion.div>
                     </div>
                   </SheetContent>

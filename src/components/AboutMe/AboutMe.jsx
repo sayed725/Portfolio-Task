@@ -108,7 +108,7 @@ const AboutMe = () => {
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full justify-center items-center lg:justify-start">
               <div className="flex flex-col lg:flex-row items-center justify-between bg-[#1f1f1f] py-5 px-10 rounded-lg transition-colors gap-10">
-                <motion.p variants={fadeInUp} className="flex items-center text-start gap-2">
+                <motion.div variants={fadeInUp} className="flex items-center text-start gap-2">
                   <p className="rounded-full bg-[#c8f21d]">
                     <FaEnvelope className="text-black text-5xl p-2" />
                   </p>
@@ -117,8 +117,8 @@ const AboutMe = () => {
                     <br />
                     <span className="text-xl">support@gmail.com</span>
                   </p>
-                </motion.p>
-                <motion.p variants={fadeInUp} className="flex items-center gap-2 text-start">
+                </motion.div>
+                <motion.div variants={fadeInUp} className="flex items-center gap-2 text-start">
                   <p className="rounded-full bg-[#c8f21d]">
                     <FaPhone className="text-black text-5xl p-2" />
                   </p>
@@ -127,7 +127,7 @@ const AboutMe = () => {
                     <br />
                     <span className="text-xl">+8801627142598</span>
                   </p>
-                </motion.p>
+                </motion.div>
               </div>
             </motion.div>
           </motion.div>

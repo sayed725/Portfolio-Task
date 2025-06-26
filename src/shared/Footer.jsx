@@ -36,7 +36,7 @@ const ResponsiveFooter = () => {
                 Quick Link
               </h3>
               <div className="">
-                <ul class="flex text-gray-400 flex-wrap gap-4">
+                <ul className="flex text-gray-400 flex-wrap gap-4">
                   <li>
                     < NavLink to={'/'} className="hover:text-[#c8f21d]">
                       Home
@@ -56,7 +56,7 @@ const ResponsiveFooter = () => {
               </div>
 
               {/* input  */}
-              <div class="flex gap-3 mt-10 lg:w-2/3 items-center">
+              <div className="flex gap-3 mt-10 lg:w-2/3 items-center">
                 <input
               type="email"
               name="email"
@@ -74,19 +74,19 @@ const ResponsiveFooter = () => {
             {/* Adress  */}
             <div className="lg:w-[20%] ">
               <div className="space-y-5 text-gray-400">
-                <h3 class="text-[1.2rem] font-semibold text-white mb-5">
+                <h3 className="text-[1.2rem] font-semibold text-white mb-5">
                   Address
                 </h3>
-                <p class="flex items-center ">
-                  <FaMapMarkerAlt class="mr-3 text-[#c8f21d]" /> 55 Main Street,
+                <p className="flex items-center ">
+                  <FaMapMarkerAlt className="mr-3 text-[#c8f21d]" /> 55 Main Street,
                   2nd block, New York City
                 </p>
-                <p class="flex items-center mt-2">
-                  <FaEnvelope class="mr-3 text-[#c8f21d]" />{" "}
+                <p className="flex items-center mt-2">
+                  <FaEnvelope className="mr-3 text-[#c8f21d]" />{" "}
                   abusayedkhan.pro@gmail.com
                 </p>
-                <p class="flex items-center mt-2">
-                  <FaPhoneAlt class="mr-3 text-[#c8f21d]" /> +880 1627142598
+                <p className="flex items-center mt-2">
+                  <FaPhoneAlt className="mr-3 text-[#c8f21d]" /> +880 1627142598
                 </p>
               </div>
             </div>
@@ -102,13 +102,13 @@ const ResponsiveFooter = () => {
 
       {/* copy right  */}
     <div className="w-11/12 mx-auto">
-         <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto text-gray-400">
+         <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto text-gray-400">
             <p>Copyright @2025, <span className="text-[#c8f21d]">DevShine</span> All Rights Reserved</p>
-            <div class="flex space-x-5">
-              <a href="https://www.facebook.com/abu.ssayed.khan.2024"  target="_blank" class="hover:text-[#c8f21d]">Facebook</a>
-              <a href="https://github.com/sayed725" target="_blank" class="hover:text-[#c8f21d]">Github</a>
-              <a href="https://www.facebook.com/abu.ssayed.khan.2024" target="_blank" class="hover:text-[#c8f21d]">Instagram</a>
-              <a href="https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:text-[#c8f21d]">LinkedinIn</a>
+            <div className="flex space-x-5">
+              <a href="https://www.facebook.com/abu.ssayed.khan.2024"  target="_blank" className="hover:text-[#c8f21d]">Facebook</a>
+              <a href="https://github.com/sayed725" target="_blank" className="hover:text-[#c8f21d]">Github</a>
+              <a href="https://www.facebook.com/abu.ssayed.khan.2024" target="_blank" className="hover:text-[#c8f21d]">Instagram</a>
+              <a href="https://www.linkedin.com/in/abu-sayed-khan-922801317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="hover:text-[#c8f21d]">LinkedinIn</a>
             </div>
           </div>
     </div>
