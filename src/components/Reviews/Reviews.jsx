@@ -7,91 +7,113 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { FaQuoteLeft } from "react-icons/fa";
+import Autoplay from "embla-carousel-autoplay";
 
 const Reviews = () => {
+
   const testimonials = [
     {
       name: "Rodolfo E. Shannon",
       title: "CEO & Founder",
       quote:
-        "At vero eoset accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores",
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
       image: "/random-1.avif",
     },
     {
-      name: "Rodolfo E. Shannon",
+      name: "Maria G. Lopez",
       title: "CTO & Founder",
       quote:
-        "At vero eoset accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores",
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
       image: "/randol-2.jpg",
     },
     {
-      name: "Rodolfo E. Shannon",
+      name: "James T. Carter",
       title: "CEO & Founder",
       quote:
-        "At vero eoset accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores",
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
       image: "/random-1.avif",
     },
     {
-      name: "Rodolfo E. Shannon",
+      name: "Sarah K. Patel",
       title: "CTO & Founder",
       quote:
-        "At vero eoset accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores",
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
+      image: "/randol-2.jpg",
+    },
+    {
+      name: "James T. Carter",
+      title: "CEO & Founder",
+      quote:
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
+      image: "/random-1.avif",
+    },
+    {
+      name: "Sarah K. Patel",
+      title: "CTO & Founder",
+      quote:
+        "Their team delivered exceptional designs that perfectly aligned with our brand vision.",
       image: "/randol-2.jpg",
     },
   ];
 
   return (
     <div className="w-11/12 mx-auto my-10 bg-black">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 py-10">
-        <div className="flex-1 flex flex-col justify-center items-center lg:items-start">
-          <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4">
+      <div className="max-w-7xl mx-auto py-20">
+        <div className="lg:text-center">
+          <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4 lg:text-center">
             Clients Testimonials
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-8">
-            I’ve 1253+ Clients <span className="text-[#c8f21d]">Feedback</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider text-white mb-6">
+            Hear from Our <span className="text-[#c8f21d]">1253+</span> Satisfied{" "}
+            <span className="text-[#c8f21d]">Clients</span>
           </h1>
-          <p className="text-gray-500 text-sm sm:text-base mb-8">
-            Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-            inventore veritatis
-          </p>
         </div>
         <Carousel
+
+         plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
           opts={{
             align: "start",
-            slidesToScroll: 2,
-            slidesToShow: 2,
+            slidesToScroll: 1,
+            slidesToShow: 1,
           }}
-          className="w-full lg:w-2/3 max-w-4xl mx-auto"
+          className="w-9/12 sm:w-10/12 lg:w-full py-5 mx-auto"
+         
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="basis-1/2">
-                <div className="bg-gray-900 rounded-xl p-6 shadow-lg text-center">
+              <CarouselItem key={index} className="basis-2/2 lg:basis-1/3">
+                <div className="bg-black hover:bg-[#1f1f1f] border-2 border-[#1f1f1f] rounded-lg shadow-lg text-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
                   <div className="flex justify-center mb-4">
                     <div className="relative">
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover"
+                        className="w-10 sm:w-12 md:w-14 h-10 sm:h-12 md:h-14 rounded-full object-cover"
                       />
-                      <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#c8f21d] rounded-full flex items-center justify-center text-black text-xs">
+                      <span className="absolute -top-2 -left-2 w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 bg-[#c8f21d] rounded-full flex items-center justify-center text-black text-xs sm:text-sm">
                         <FaQuoteLeft />
                       </span>
                     </div>
                   </div>
-                  <p className="text-gray-400 text-sm sm:text-base mb-4">
+                  <p className="text-gray-400 text-xs sm:text-sm md:text-base mb-4">
                     {testimonial.quote}
                   </p>
-                  <h3 className="text-white text-lg font-medium">
+                  <h3 className="text-white text-base sm:text-lg md:text-xl font-medium">
                     {testimonial.name}
                   </h3>
-                  <p className="text-gray-500 text-sm">{testimonial.title}</p>
+                  <p className="text-gray-500 text-xs sm:text-sm md:text-base">
+                    {testimonial.title}
+                  </p>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-gray-800 text-white hover:bg-gray-700" />
-          <CarouselNext className="bg-gray-800 text-white hover:bg-gray-700" />
+          <CarouselPrevious className="bg-black text-white hover:bg-[#c8f21d] hover:text-black" />
+          <CarouselNext className="bg-black text-white hover:bg-[#c8f21d] hover:text-black" />
         </Carousel>
       </div>
     </div>
