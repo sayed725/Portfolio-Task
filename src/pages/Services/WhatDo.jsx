@@ -11,7 +11,7 @@ const WhatDo = () => {
   ];
 
   return (
-    <div className="py-6 sm:py-10 bg-black mx-auto">
+    <div className="py-6 sm:py-10 w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 flex flex-col lg:flex-row">
           {/* Image div */}
@@ -65,7 +65,7 @@ const WhatDo = () => {
                   className="flex items-center gap-3 sm:gap-5  lg:justify-start"
                 >
                   <span className="bg-[#c8f21d] rounded-full p-1 sm:p-2">
-                    <FaCheck className="text-black text-xl sm:text-2xl lg:text-4xl" />
+                    <FaCheck className="text-black text-xl sm:text-2xl lg:text-3xl" />
                   </span>
                   <span className="text-gray-400 text-base sm:text-lg lg:text-xl">
                     {service}

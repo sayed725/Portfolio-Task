@@ -5,14 +5,14 @@ import BlogCategory from "./BlogCategory";
 import BlogTags from "./BlogTags";
 
 const Sidebar = () => (
-  <div className="w-full bg-[#1f1f1f] py-5 px-5 text-white rounded-md flex flex-col gap-5 border border-gray-700">
+  <div className="w-full bg-[#1f1f1f] py-5 px-5 text-white rounded-lg flex flex-col gap-5 border border-gray-700">
     {/* input  */}
     <h2 className="text-2xl  mb-4">Search</h2>
     <div className="relative">
       <input
         type="text"
         placeholder="Search..."
-        className="w-full p-4 bg-black text-[#c8f21d] border-none rounded-md"
+        className="w-full p-4 bg-black text-[#c8f21d] border-none rounded-lg"
       />
       <FaSearch className="absolute right-4 top-5 text-[#c8f21d]" />
     </div>
@@ -28,7 +28,7 @@ const Sidebar = () => (
 
     {/* hire me  */}
 
-    <div className="relative w-full h-96 bg-gray-800 rounded-xl overflow-hidden shadow-lg mt-10">
+    <div className="relative w-full h-96 bg-gray-800 rounded-lg overflow-hidden shadow-lg mt-10">
       <img
         src="/web-team.png"
         alt="Creative Team"
@@ -39,7 +39,7 @@ const Sidebar = () => (
         <h2 className="text-white text-3xl font-bold mt-2">
           Looking For Creative Web Designer
         </h2>
-        <Button className="mt-4  bg-[#c8f21d] text-black font-semibold rounded-md hover:bg-white transition">
+        <Button className="mt-4  bg-[#c8f21d] text-black font-semibold rounded-lg hover:bg-white transition">
           Hire Me &gt;
         </Button>
       </div>

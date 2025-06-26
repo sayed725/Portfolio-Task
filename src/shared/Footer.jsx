@@ -35,7 +35,7 @@ const ResponsiveFooter = () => {
                 Quick Link
               </h3>
               <div className="">
-                <ul class="flex text-white flex-wrap gap-4">
+                <ul class="flex text-gray-400 flex-wrap gap-4">
                   <li>
                     <a href="#" class="hover:text-yellow-400">
                       Home
@@ -65,11 +65,11 @@ const ResponsiveFooter = () => {
 
             {/* Adress  */}
             <div className="lg:w-[20%] ">
-              <div className="space-y-5">
+              <div className="space-y-5 text-gray-400">
                 <h3 class="text-[1.2rem] font-semibold text-white mb-5">
                   Address
                 </h3>
-                <p class="flex items-center">
+                <p class="flex items-center ">
                   <FaMapMarkerAlt class="mr-3 text-[#c8f21d]" /> 55 Main Street,
                   2nd block, New York City
                 </p>
@@ -94,7 +94,7 @@ const ResponsiveFooter = () => {
 
       {/* copy right  */}
     <div className="w-11/12 mx-auto">
-         <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto">
+         <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto text-gray-400">
             <p>Copyright @2025, <span className="text-[#c8f21d]">DevShine</span> All Rights Reserved</p>
             <div class="flex space-x-5">
               <a href="#" class="hover:text-[#c8f21d]">Facebook</a>
