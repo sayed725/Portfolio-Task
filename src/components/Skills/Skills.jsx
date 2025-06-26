@@ -8,11 +8,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 const Skills = () => {
-
-    const skills = [
+  const skills = [
     { name: "Figma", percentage: "95%", icon: "/figma-1.png" },
     { name: "Framer", percentage: "83%", icon: "/public/framer-1.png" },
     { name: "Photoshop", percentage: "93%", icon: "/photoshop-1.png" },
@@ -23,13 +22,10 @@ const Skills = () => {
     { name: "Sketch", percentage: "94%", icon: "/sketchapp-icon-1.png" },
   ];
 
-
   return (
     <div className="py-10 w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
-
-
           {/* Text side */}
           <div className="w-full flex flex-col  gap-4 justify-center items-start text-left">
             <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4">
@@ -54,29 +50,32 @@ const Skills = () => {
             </Button>
           </div>
 
-
-           {/* Image div */}
+          {/* Image div */}
           <div className="w-full flex justify-center lg:justify-start">
-           <div className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        {skills.map((skill, index) => (
-          <Card key={index} className="bg-[#1f1f1f] border-2 border-gray-700 hover:border-[#c8f21d] transition-colors  rounded-lg overflow-hidden">
-            <CardContent className="text-center">
-              <img src={skill.icon} alt={skill.name} className="mx-auto mb-2" />
-              <h3 className="text-white text-lg font-medium overflow-hidden">{skill.name}</h3>
-             
-                <Button className="text-white mt-2 text-sm hover:text-black hover:bg-[#c8f21d] ">{skill.percentage}</Button>
-             
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+            <div className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+              {skills.map((skill, index) => (
+                <Card
+                  key={index}
+                  className="bg-[#1f1f1f] border-2 border-gray-700 hover:border-[#c8f21d] transition-colors  rounded-lg overflow-hidden"
+                >
+                  <CardContent className="text-center">
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="mx-auto mb-2"
+                    />
+                    <h3 className="text-white text-lg font-medium overflow-hidden">
+                      {skill.name}
+                    </h3>
+
+                    <Button className="text-white mt-2 text-sm hover:text-black hover:bg-[#c8f21d] ">
+                      {skill.percentage}
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
-
-
-
-
-
-
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const Pricing = () => {
         { name: "Mobile Apps Design", included: true },
         { name: "Product Design", included: true },
         { name: "Digital Marketing", included: true },
-        { name: "Custom Support", included: true },
+        { name: "Custom Support", included: false },
       ],
     },
     {

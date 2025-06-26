@@ -1,4 +1,5 @@
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/HeroSection/Hero";
 import PopularServices from "../../components/PopularServices/PopularServices";
 import Pricing from "../../components/Pricing/Pricing";
@@ -36,6 +37,10 @@ const Home = () => {
             </div>
             <div>
                 <Pricing />
+            </div>
+
+            <div>
+                <Contact />
             </div>
         </div>
     );

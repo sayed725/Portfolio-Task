@@ -34,7 +34,7 @@ const AboutMe = () => {
             {/* title  */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider  mb-4">
               Best <span className="text-[#c8f21d]">UI/UX Designer & </span> 
-             <span className="italic text-[#c8f21d]">Developer</span> in Bangladesh
+             <span className="text-[#c8f21d]">Developer</span> in Bangladesh
             </h1>
 
             {/* description  */}

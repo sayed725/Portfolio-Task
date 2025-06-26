@@ -59,6 +59,7 @@ const Reviews = () => {
   return (
     <div className="w-11/12 mx-auto my-10 bg-black">
       <div className="max-w-7xl mx-auto py-20">
+        {/* title  */}
         <div className="lg:text-center">
           <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4 lg:text-center">
             Clients Testimonials
@@ -68,6 +69,8 @@ const Reviews = () => {
             <span className="text-[#c8f21d]">Clients</span>
           </h1>
         </div>
+
+        {/* sliders  */}
         <Carousel
 
          plugins={[
@@ -86,7 +89,7 @@ const Reviews = () => {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="basis-2/2 lg:basis-1/3">
-                <div className="bg-black hover:bg-[#1f1f1f] border-2 border-[#1f1f1f] rounded-lg shadow-lg text-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
+                <div className="bg-black hover:bg-[#1f1f1f] border-2 border-[#1f1f1f] rounded-lg shadow-lg text-center px-4 sm:px-6 md:px-8 py-15 md:py-20">
                   <div className="flex justify-center mb-4">
                     <div className="relative">
                       <img
@@ -102,7 +105,7 @@ const Reviews = () => {
                   <p className="text-gray-400 text-xs sm:text-sm md:text-base mb-4">
                     {testimonial.quote}
                   </p>
-                  <h3 className="text-white text-base sm:text-lg md:text-xl font-medium">
+                  <h3 className="text-white text-base sm:text-lg md:text-xl">
                     {testimonial.name}
                   </h3>
                   <p className="text-gray-500 text-xs sm:text-sm md:text-base">
