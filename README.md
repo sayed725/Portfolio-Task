@@ -28,13 +28,14 @@ A modern portfolio website built with **React + Vite**,
 
 
 ## Installation  
-1. Clone the repository:  
+   Install Dependencies:  
    ```bash
-  npm install
+   npm install
+
 
 
 ## Installation  
-1. Clone the repository:  
+   Run This project:  
    ```bash
    npm run dev
 
