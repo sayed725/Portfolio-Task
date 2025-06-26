@@ -31,11 +31,8 @@ A modern portfolio website built with **React + Vite**,
    Install Dependencies:  
    ```bash
    npm install
-
-
-
-## Installation  
-   Run This project:  
-   ```bash
    npm run dev
+
+
+
 
