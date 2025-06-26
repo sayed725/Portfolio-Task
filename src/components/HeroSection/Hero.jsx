@@ -18,7 +18,7 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold mt-4 sm:mt-4 lg:mt-5 tracking-wider">
             A UI/UX DESIGNER <br /><span className="">& DEVELOPER</span>
           </h1>
-          <p className="mt-5 text-gray-400 tracking-wider text-sm sm:text-lg lg:text-justify  max-w-lg mx-auto lg:mx-0">
+          <p className="mt-5 text-gray-400 tracking-wider text-sm sm:text-lg lg:text-justify   max-w-lg  lg:mx-0">
             As a dedicated professional with a passion for design, I bring 10+ years of experience in UI/UX design & development throughout the best of my career.
           </p>
 

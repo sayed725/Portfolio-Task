@@ -1,9 +1,6 @@
-
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 import { RiCheckDoubleFill } from "react-icons/ri";
-
-
 
 const AboutMe = () => {
   const services = [
@@ -16,14 +13,33 @@ const AboutMe = () => {
   return (
     <div className="py-10 bg-black w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
-        <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-10 flex flex-col-reverse">
+        <div className=" gap-10 flex  lg:flex-row flex-col-reverse">
           {/* Image div */}
-          <div className="w-full  flex justify-center lg:justify-start">
-            <img
-              src="/about.jpg"
-              alt="Profile"
-              className="w-full max-w-md h-auto rounded-lg object-cover"
-            />
+          <div className="w-full relative  flex justify-center lg:justify-start">
+            <div>
+              <img
+                src="/about.jpg"
+                alt="Profile"
+                className="w-full max-w-md h-auto rounded-lg object-cover"
+              />
+            </div>
+
+            <div className="absolute top-[200px] right-16 bg-white text-black rounded-lg p-3 lg:flex items-center space-x-2 shadow-lg hidden ">
+              <img
+                src="/figma-1.png" 
+                alt="figma"
+                className="w-6 h-6 rounded-full"
+              />
+              <span className="font-semibold">Professional Designer</span>
+            </div>
+            <div className="absolute bottom-[150px] right-2 bg-white text-black rounded-lg p-3 lg:flex items-center space-x-2 shadow-lg hidden">
+              <img
+                src="/coading.jpg" 
+                alt="Profile"
+                className="w-6 h-6 rounded-full"
+              />
+              <span className="font-semibold">Experienced Developer</span>
+            </div>
           </div>
 
           {/* Text side */}
@@ -33,8 +49,8 @@ const AboutMe = () => {
             </p>
             {/* title  */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wider  mb-4">
-              Best <span className="text-[#c8f21d]">UI/UX Designer & </span> 
-             <span className="text-[#c8f21d]">Developer</span> in Bangladesh
+              Best <span className="text-[#c8f21d]">UI/UX Designer & </span>
+              <span className="text-[#c8f21d]">Developer</span> in Bangladesh
             </h1>
 
             {/* description  */}
@@ -51,7 +67,7 @@ const AboutMe = () => {
                   key={index}
                   className="flex items-center gap-2 justify-start"
                 >
-                  <RiCheckDoubleFill  className="text-[#c8f21d] text-2xl" />
+                  <RiCheckDoubleFill className="text-[#c8f21d] text-2xl" />
                   <span className="text-gray-400 text-xl">{service}</span>
                 </div>
               ))}
