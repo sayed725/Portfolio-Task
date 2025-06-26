@@ -1,7 +1,6 @@
 import { FaDownload, FaInstagram, FaWhatsapp, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
-import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -53,7 +52,7 @@ const Hero = () => {
               </Button>
             </a>
             <div>
-              <Link to="/projects">
+              <Link to="projects" smooth={true} duration={700}>
                 <Button variant="ghost" className="rounded-md font-semibold text-white lg:text-lg lg:py-6 border-[#c8f21d] hover:text-black w-full flex justify">
                   Browse Projects
                 </Button>

@@ -49,7 +49,7 @@ const Skills = () => {
             </p>
 
             {/* contact card */}
-            <Button className="bg-[#c8f21d] text-black text-sm sm:text-base lg:text-lg py-2 sm:py-3 lg:py-5 hover:bg-white flex items-center lg:justify-center gap-1 sm:gap-2  ">
+            <Button className="bg-[#c8f21d] text-black text-sm sm:text-base lg:text-lg py-2  lg:py-5 hover:bg-white flex items-center lg:justify-center gap-1 sm:gap-3  ">
               Learn More <FaChevronRight />
             </Button>
           </div>
@@ -59,13 +59,13 @@ const Skills = () => {
           <div className="w-full flex justify-center lg:justify-start">
            <div className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
-          <Card key={index} className="bg-[#1f1f1f] border-2 border-gray-700 hover:border-[#c8f21d] rounded-lg  overflow-hidden">
-            <CardContent className="p-2 text-center">
+          <Card key={index} className="bg-[#1f1f1f] border-2 border-gray-700 hover:border-[#c8f21d] transition-colors  rounded-lg overflow-hidden">
+            <CardContent className="text-center">
               <img src={skill.icon} alt={skill.name} className="mx-auto mb-2" />
-              <h3 className="text-white text-lg font-medium">{skill.name}</h3>
-              <div className="mt-2 bg-gray-800 rounded-lg p-3 flex items-center justify-center">
-                <span className="text-white text-sm ">{skill.percentage}</span>
-              </div>
+              <h3 className="text-white text-lg font-medium overflow-hidden">{skill.name}</h3>
+             
+                <Button className="text-white mt-2 text-sm hover:text-black hover:bg-[#c8f21d] ">{skill.percentage}</Button>
+             
             </CardContent>
           </Card>
         ))}

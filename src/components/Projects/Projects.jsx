@@ -1,5 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   const projects = [
@@ -30,7 +31,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="py-10 w-11/12 mx-auto">
+   <Element name="projects">
+     <div className="py-10 w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto">
         {/* title */}
         <p className="text-gray-400 text-base sm:text-lg tracking-wider mb-4 lg:text-center">
@@ -80,6 +82,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
+    </Element>
   );
 };
 
